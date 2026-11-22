@@ -1,0 +1,13 @@
+* Capture 0, 1, 1, 0, 0, 1. D also changes during high clock phases.
+.include "16nm_HP.pm"
+.include "dff_core.inc"
+Vpower vdd 0 0.7
+Vclk clk 0 PULSE(0 0.7 1n 5p 5p 0.8n 3n)
+Vdata d 0 PWL(0 0 1.3n 0 1.305n 0.7 4.3n 0.7 4.305n 0
++ 6.5n 0 6.505n 0.7 7.3n 0.7 7.305n 0 13.3n 0 13.305n 0.7)
+Xdut d clk q vdd 0 md mbar DFF
+Cload q 0 1f
+.tran 0 17n 0 1p
+.save V(d) V(clk) V(q)
+.options plotwinsize=0
+.end

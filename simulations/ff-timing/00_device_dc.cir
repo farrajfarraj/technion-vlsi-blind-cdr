@@ -1,0 +1,17 @@
+* Independent NMOS and PMOS transfer curves at |VDS| = 0.7 V
+.include "16nm_HP.pm"
+.param VDD=0.7
+Vgate gn 0 0
+Vdn dn 0 {VDD}
+MN dn gn 0 0 nmos L=16n W=32n
+Vrail rail 0 {VDD}
+Egate rail gp gn 0 1
+Vdp dp 0 0
+MP dp gp rail rail pmos L=16n W=64n
+.dc Vgate 0 0.7 0.005
+.save I(Vdn) I(Vdp) V(gn) V(gp)
+.meas dc in_off FIND -I(Vdn) AT=0
+.meas dc in_on  FIND -I(Vdn) AT=0.7
+.meas dc ip_off FIND I(Vdp) AT=0
+.meas dc ip_on  FIND I(Vdp) AT=0.7
+.end

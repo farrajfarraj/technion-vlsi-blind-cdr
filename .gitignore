@@ -1,0 +1,28 @@
+# Locally obtained transistor models and packaged copies
+*.pm
+*.zip
+*.7z
+
+# LTspice outputs and editor backups
+*.raw
+*.log
+*.net
+*.fft
+*.op
+*.tmp
+*.bak
+*.asc~
+*.plt~
+*~
+
+# Machine-specific settings and Python environments
+.env
+.env.*
+.venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

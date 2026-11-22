@@ -1,0 +1,7 @@
+# Preserve the verified LTspice source bytes on Windows and Unix checkouts.
+*.cir -text whitespace=trailing-space,cr-at-eol
+*.inc -text whitespace=trailing-space,cr-at-eol
+*.asc -text whitespace=trailing-space,cr-at-eol
+*.png binary
+*.md text eol=lf
+*.py text eol=lf

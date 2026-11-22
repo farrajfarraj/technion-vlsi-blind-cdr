@@ -1,0 +1,177 @@
+LTspice 24.0.12 for Windows
+Circuit: * Timestep check and 0.01 ps separation grid near the 5 percent crossing
+Start Time: Sun Nov 22 11:52:57 2026
+solver = Normal
+Maximum thread count: 32
+
+
+
+Direct Newton iteration for .op point succeeded.
+.step delta=5.7e-12
+
+
+
+.step delta=5.8e-12
+
+
+
+.step delta=6e-12
+
+
+
+.step delta=1.18e-11
+
+
+
+.step delta=1.19e-11
+
+
+
+.step delta=1.191e-11
+
+
+
+.step delta=1.192e-11
+
+
+
+.step delta=1.193e-11
+
+
+
+.step delta=1.194e-11
+
+
+
+.step delta=1.195e-11
+
+
+
+.step delta=1.196e-11
+
+
+
+.step delta=1.197e-11
+
+
+
+.step delta=1.198e-11
+
+
+
+.step delta=1.2e-11
+
+
+
+.step delta=2e-10
+
+
+
+.step delta=3e-10
+tnom = 27
+temp = 27
+method = modified trap
+.step delta=5e-10
+
+
+Measurement: tc
+  step	v(clk)=0.35
+     1	6.025e-10
+     2	6.025e-10
+     3	6.025e-10
+     4	6.025e-10
+     5	6.025e-10
+     6	6.025e-10
+     7	6.025e-10
+     8	6.025e-10
+     9	6.025e-10
+    10	6.025e-10
+    11	6.025e-10
+    12	6.025e-10
+    13	6.025e-10
+    14	6.025e-10
+    15	6.025e-10
+    16	6.025e-10
+    17	6.025e-10
+
+Measurement: td50
+  step	v(d)=0.35
+     1	5.968e-10
+     2	5.967e-10
+     3	5.965e-10
+     4	5.907e-10
+     5	5.906e-10
+     6	5.9059e-10
+     7	5.9058e-10
+     8	5.9057e-10
+     9	5.9056e-10
+    10	5.9055e-10
+    11	5.9054e-10
+    12	5.9053e-10
+    13	5.9052e-10
+    14	5.905e-10
+    15	4.025e-10
+    16	3.025e-10
+    17	1.025e-10
+
+Measurement: tq
+  step	v(q)=0.35
+     1	0
+     2	6.96282e-10
+     3	6.47853e-10
+     4	6.22113e-10
+     5	6.22078e-10
+     6	6.22075e-10
+     7	6.22071e-10
+     8	6.22068e-10
+     9	6.22065e-10
+    10	6.22061e-10
+    11	6.22058e-10
+    12	6.22055e-10
+    13	6.22051e-10
+    14	6.22045e-10
+    15	6.21134e-10
+    16	6.21134e-10
+    17	6.21134e-10
+
+Measurement: separation
+  step	tc-td50
+     1	5.7e-12
+     2	5.8e-12
+     3	6e-12
+     4	1.18e-11
+     5	1.19e-11
+     6	1.191e-11
+     7	1.192e-11
+     8	1.193e-11
+     9	1.194e-11
+    10	1.195e-11
+    11	1.196e-11
+    12	1.197e-11
+    13	1.198e-11
+    14	1.2e-11
+    15	2e-10
+    16	3e-10
+    17	5e-10
+
+Measurement: clk_to_q
+  step	tq-tc
+     1	0
+     2	9.37816e-11
+     3	4.53526e-11
+     4	1.96125e-11
+     5	1.95781e-11
+     6	1.95747e-11
+     7	1.95714e-11
+     8	1.9568e-11
+     9	1.95647e-11
+    10	1.95614e-11
+    11	1.9558e-11
+    12	1.95547e-11
+    13	1.95514e-11
+    14	1.95449e-11
+    15	1.86345e-11
+    16	1.86344e-11
+    17	1.86345e-11
+
+Total elapsed time: 41.806 seconds.

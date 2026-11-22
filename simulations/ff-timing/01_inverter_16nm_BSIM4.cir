@@ -1,0 +1,16 @@
+* 16nm PTM-style bulk CMOS model: inverter startup test
+* Source of model file: CMU-SAFARI CROW, SPICESim/PTM_transistors/HP/16nm_HP.pm
+* NOT a FinFET model and NOT TSMC N16.
+* Place original 16nm_HP.pm in this same folder before opening in LTspice.
+.include "16nm_HP.pm"
+.param VDD=0.7
+VPOWER vdd 0 {VDD}
+VIN in 0 PULSE(0 {VDD} 0.5n 5p 5p 0.5n 1n)
+MP out in vdd vdd pmos L=16n W=64n
+MN out in 0 0 nmos L=16n W=32n
+CLOAD out 0 1f
+.tran 0 4n 0 1p
+.meas tran tPHL TRIG V(in) VAL={VDD/2} RISE=2 TARG V(out) VAL={VDD/2} FALL=2
+.meas tran tPLH TRIG V(in) VAL={VDD/2} FALL=2 TARG V(out) VAL={VDD/2} RISE=2
+.save V(in) V(out)
+.end

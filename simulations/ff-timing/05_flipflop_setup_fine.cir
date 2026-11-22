@@ -1,0 +1,5 @@
+* Timestep check and 0.01 ps separation grid near the 5 percent crossing
+.param maxstep=0.0625p
+.step param delta list 500p 300p 200p 12p 11.98p 11.97p 11.96p 11.95p 11.94p 11.93p 11.92p 11.91p 11.90p 11.8p 6p 5.8p 5.7p
+.include "setup_bench.inc"
+.end

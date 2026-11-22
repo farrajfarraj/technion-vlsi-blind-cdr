@@ -1,0 +1,5 @@
+* Refined sweep across 5 percent delay growth and loss of capture
+.param maxstep=0.125p
+.step param delta list 500p 300p 200p 15p 13p 12.8p 12.6p 12.4p 12.2p 12p 11.8p 11.6p 11.4p 11.2p 11p 10p 8p 6.25p 6p 5.9p 5.8p 5.7p 5.6p 5.5p 5.25p 5p 4p
+.include "setup_bench.inc"
+.end
