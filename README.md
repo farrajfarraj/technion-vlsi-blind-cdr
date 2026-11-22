@@ -40,7 +40,7 @@ LTspice produces the waveforms. Python and NumPy extract crossings. ReportLab, p
 
 ## Current progress and scope
 
-The students have reproduced the inverter locally. The next milestone is an independent student rerun of the flip-flop pattern and setup sweep, followed by review of the capture boundary. Instructor acceptance of this predictive model is pending. [Progress log](docs/progress-log.md) · [Issue list](docs/issues.md)
+We have reproduced the inverter locally. The next milestone is an independent rerun of the flip-flop pattern and setup sweep, followed by review of the capture boundary. Instructor acceptance of this predictive model is pending. [Progress log](docs/progress-log.md) · [Issue list](docs/issues.md)
 
 This is an academic circuit experiment. The public model describes predictive planar bulk CMOS. Official TSMC N16 FinFET characterization requires foundry technology data. The results above apply to this flip-flop and testbench at the stated operating point.
 
@@ -48,5 +48,5 @@ This is an academic circuit experiment. The public model describes predictive pl
 
 | Student | Name | GitHub profile |
 | --- | --- | --- |
-| 1 | To be supplied | To be supplied |
-| 2 | To be supplied | To be supplied |
+| 1 | Farraj Farraj | farrajfarraj |
+| 2 | Daniel ryabikh | danielryabikh |
