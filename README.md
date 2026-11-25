@@ -34,13 +34,13 @@ At 5.8 ps data lead, Q took 93.78 ps to rise. At 5.7 ps, Q stayed below half sup
 | `models/` | Model provenance, acquisition instructions and expected hash |
 | `scripts/` | Windows LTspice runner, Python waveform analysis and plotting |
 | `results/` | Figures, numerical measurements and selected LTspice log transcripts |
-| `docs/` | Reproduction procedure, milestone history and issue descriptions |
+| `docs/` | Reproduction procedure, project plan, milestone history and issue descriptions |
 
 LTspice produces the waveforms. Python and NumPy extract crossings. ReportLab, pypdfium2 and Pillow render the figures. Git records changes, and the collaboration workflow uses GitHub issues and pull requests. [Contribution guide](CONTRIBUTING.md)
 
 ## Current progress and scope
 
-We have reproduced the inverter locally. The next milestone is an independent rerun of the flip-flop pattern and setup sweep, followed by review of the capture boundary. Instructor acceptance of this predictive model is pending. [Progress log](docs/progress-log.md) · [Issue list](docs/issues.md)
+We have reproduced the inverter locally. Independent student reproduction of the flip-flop pattern and timing sweep is pending. The next experiment qualifies the 16 nm device model and builds a bank of ten CMOS DFFs driven by staggered taps from one master clock. The midterm evidence will be clock-to-Q delay and capture status for each tap. [Project plan](docs/project-plan.md) · [Progress log](docs/progress-log.md) · [Issue list](docs/issues.md)
 
 This is an academic circuit experiment. The public model describes predictive planar bulk CMOS. Official TSMC N16 FinFET characterization requires foundry technology data. The results above apply to this flip-flop and testbench at the stated operating point.
 
